@@ -12,7 +12,7 @@ var rapidFire = false
 func _ready():
 	set_process(true)
 	set_physics_process(true)
-
+onready var CooldownTimer : = $CooldownTimer
 func _physics_process(delta):
 	if Input. is_action_pressed("ui_left"):
 		if position.x > 10:
@@ -21,14 +21,18 @@ func _physics_process(delta):
 		if position.x < 1250:
 			move_and_collide(Vector2(movement_speed * delta, 0))
 
+
+
 func _process(delta):
 	if Input.is_action_just_pressed("ui_Ctrl"):
 		rapidFire = !rapidFire
 	if rapidFire:
-		if Input.is_action_pressed("fire"):
+		if Input.is_action_pressed("fire") and CooldownTimer.is_stopped():
+#		if Input.is_action_pressed("fire"):
 			var bulletInstance = bulletSource.instance()
 			bulletInstance.position = Vector2(position.x, position.y-20)
 			get_tree().get_root().add_child(bulletInstance)
+			CooldownTimer.start()
 	else:
 		if Input.is_action_just_pressed("fire"):
 			var bulletInstance = bulletSource.instance()

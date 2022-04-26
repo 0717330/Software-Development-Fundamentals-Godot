@@ -64,6 +64,10 @@ shape = SubResource( 1 )
 [node name="Player" parent="." instance=ExtResource( 2 )]
 position = Vector2( 642.94, 669.056 )
 
+[node name="CooldownTimer" type="Timer" parent="Player"]
+wait_time = 0.09
+one_shot = true
+
 [node name="Border_Top" type="KinematicBody2D" parent="." groups=[
 "top",
 ]]
