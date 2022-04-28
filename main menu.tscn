@@ -45,13 +45,13 @@ size_flags_vertical = 3
 
 [node name="GameScenes" type="VBoxContainer" parent="Layout/Main/Buttons"]
 margin_right = 1051.0
-margin_bottom = 110.0
+margin_bottom = 201.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
 [node name="Game Start" type="Button" parent="Layout/Main/Buttons/GameScenes"]
 margin_right = 1051.0
-margin_bottom = 53.0
+margin_bottom = 98.0
 rect_pivot_offset = Vector2( 2147.22, -259.479 )
 size_flags_horizontal = 3
 size_flags_vertical = 3
@@ -60,20 +60,19 @@ script = ExtResource( 3 )
 scene_to_load = "res://MainGame/MainGame.tscn"
 
 [node name="Options" type="Button" parent="Layout/Main/Buttons/GameScenes"]
-margin_top = 57.0
+margin_top = 102.0
 margin_right = 1051.0
-margin_bottom = 110.0
+margin_bottom = 201.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 text = "Settings"
 script = ExtResource( 3 )
 
 [node name="Quit" type="Button" parent="Layout/Main/Buttons"]
-margin_top = 114.0
+margin_top = 205.0
 margin_right = 1051.0
 margin_bottom = 225.0
 size_flags_horizontal = 3
-size_flags_vertical = 3
 text = "Quit"
 script = ExtResource( 2 )
 
