@@ -68,6 +68,9 @@ position = Vector2( 642.94, 669.056 )
 wait_time = 0.09
 one_shot = true
 
+[node name="invulnerability" type="Timer" parent="Player"]
+wait_time = 0.8
+
 [node name="Border_Top" type="KinematicBody2D" parent="." groups=[
 "top",
 ]]
