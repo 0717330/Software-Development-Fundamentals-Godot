@@ -17,6 +17,13 @@ func _ready():
 	print("GameOver")
 
 
+func _process(delta):
+	if get_tree().get_nodes_in_group("enemy").size() == 0:
+		print("Win")
+		get_tree().change_scene("res://Win.tscn")
+
+
+
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):
 #	pass
