@@ -24,6 +24,9 @@ func _physics_process(delta):
 
 
 func _process(delta):
+	if GlobalVariables.playerHealth == 0:
+		get_tree().change_scene("res://Lose.tscn")
+	
 	if Input.is_action_just_pressed("ui_Ctrl"):
 		rapidFire = !rapidFire
 	if rapidFire:
