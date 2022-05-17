@@ -1,10 +1,11 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://Audio/backgroundMusic.wav" type="AudioStream" id=1]
 [ext_resource path="res://Player/Player.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Enemy/Enemy.tscn" type="PackedScene" id=3]
 [ext_resource path="res://MainGame/MainGame.gd" type="Script" id=4]
 [ext_resource path="res://Enemy/Enemies.gd" type="Script" id=5]
+[ext_resource path="res://earth.jpg" type="Texture" id=6]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 20.9622, 380.576 )
@@ -22,6 +23,16 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 countdownmax = 20
+
+[node name="TextureRect" type="TextureRect" parent="."]
+margin_left = -79.8635
+margin_top = -114.399
+margin_right = 1360.14
+margin_bottom = 765.601
+texture = ExtResource( 6 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="HUD" type="HBoxContainer" parent="."]
 margin_right = 40.0
@@ -65,7 +76,7 @@ shape = SubResource( 1 )
 position = Vector2( 642.94, 669.056 )
 
 [node name="CooldownTimer" type="Timer" parent="Player"]
-wait_time = 0.09
+wait_time = 0.189
 one_shot = true
 
 [node name="invulnerability" type="Timer" parent="Player"]

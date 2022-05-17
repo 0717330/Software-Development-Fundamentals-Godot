@@ -7,7 +7,7 @@ var currentTimer
 func _ready():
 	GlobalVariables.scoringInformation["currentScore"] = 0
 	GlobalVariables.enemyBulletInstanceCount = 0
-	GlobalVariables.playerHealth = 5
+	GlobalVariables.playerHealth = 2
 	currentTimer = countdownmax
 	$HUD/Countdown.text = str(currentTimer)
 	
