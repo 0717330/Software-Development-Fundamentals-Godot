@@ -80,6 +80,7 @@ size_flags_horizontal = 3
 size_flags_vertical = 3
 text = "Settings"
 script = ExtResource( 3 )
+scene_to_load = "res://Settings.tscn"
 
 [node name="Quit" type="Button" parent="Layout/Main/Buttons"]
 margin_top = 205.0

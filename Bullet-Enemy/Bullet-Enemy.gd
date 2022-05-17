@@ -1,3 +1,9 @@
+#this script runs for each enemy bullet that has been shot by the enemy
+#shoots bullet down
+#detects collisions. If enemy object - ignore
+#if the enemy bullet goes off the screen it deletes itself
+#if the enemy bullet is colided with the player it with delete and deal damage to the player
+
 extends KinematicBody2D
 
 var speed = 500
@@ -11,10 +17,8 @@ func _ready():
 func _physics_process(delta):
 	var collidedObject = move_and_collide(Vector2(0, +speed*delta*0.4))
 	if (collidedObject):
-		#print("Enemy collide: ",collidedObject.collider.name)
 		if "Enemy" in collidedObject.collider.name:
 			pass
-			#collidedObject.get_collider().queue_free() #Don't kill the enemies.
 		elif "Player" in collidedObject.collider.name:
 			GlobalVariables.playerHealth -= 1
 			print(GlobalVariables.playerHealth)

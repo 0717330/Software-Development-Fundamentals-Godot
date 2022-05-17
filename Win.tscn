@@ -63,10 +63,19 @@ margin_left = 535.178
 margin_top = 60.7921
 margin_right = 597.178
 margin_bottom = 127.792
-rect_scale = Vector2( 10, 3 )
+rect_scale = Vector2( 10.183, 4.234 )
 script = ExtResource( 4 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="Label2" type="Label" parent="."]
+margin_left = 237.378
+margin_top = 132.18
+margin_right = 440.378
+margin_bottom = 163.18
+rect_scale = Vector2( 4.096, 4.509 )
+text = "Congrats you beat all the alians.
+       The world is saved!!!"
 [connection signal="pressed" from="restart" to="restart" method="_on_restart_pressed"]
 [connection signal="pressed" from="quit" to="quit" method="_on_quit_pressed"]
