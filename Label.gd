@@ -1,3 +1,4 @@
+#this code is the code for the win game scene that shows your score
 extends Label
 
 

@@ -1,3 +1,4 @@
+#the progress bar is the bar on the player. and it shows what health you are on
 extends ProgressBar
 
 func _ready():

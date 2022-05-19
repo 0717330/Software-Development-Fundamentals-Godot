@@ -1,14 +1,14 @@
+#player.gd is that code that runs the player in the game
+#it consists of control imputs such as left, right, fire, and switch firing modes
+#in the code it also has a bit of health code such as max health
+#the player.gd also controls what direction the bullet goes and how its fired
+#also controls movement speed
 extends KinematicBody2D
 
 var movement_speed = 750 
 var bulletSource = preload ("res://Bullet/Bullet.tscn")
 var rapidFire = false
-# Declare member variables here. Examples:
-# var a = 2
-# var b = "text"
 
-
-# Called when the node enters the scene tree for the first time.
 func _ready():
 	set_process(true)
 	set_physics_process(true)

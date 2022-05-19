@@ -1,3 +1,8 @@
+#this is the enemy.gd
+#this is the code for the enemies to be able to work
+#this code consists of enemy movement
+#enemy shooting
+#how many bullets can be on the screen at a time
 extends KinematicBody2D
 
 var bullet = preload("res://Bullet-Enemy/Bullet-Enemy.tscn")
@@ -17,7 +22,6 @@ func _colliding(area):
 		#print("emenies collide left")
 		get_parent().global_position.y += 10
 		get_parent().speed = 200
-
 
 func _process(delta):
 #	while (true):

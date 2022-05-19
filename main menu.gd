@@ -1,3 +1,5 @@
+#this is the main menu screen 
+#this code makes the buttons work and send you to different screens
 extends Node2D
 
 func _ready():

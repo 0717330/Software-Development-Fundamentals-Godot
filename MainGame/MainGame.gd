@@ -1,3 +1,7 @@
+#this is the maingame.gd
+#this controls basically everything
+#this code controls the win condition, player health,
+#timers, loose condition when you run out of time
 extends Control
 
 export(int) var countdownmax
@@ -25,8 +29,3 @@ func _process(delta):
 		print("Win")
 		get_tree().change_scene("res://Win.tscn")
 
-
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta):
-#	pass

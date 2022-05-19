@@ -1,3 +1,5 @@
+#this is the quit.gd this is the code that makes quit buttons work
+#it makes you back out of the game when pressed quit
 extends Button
 
 

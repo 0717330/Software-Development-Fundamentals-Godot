@@ -1,3 +1,4 @@
+#restart.gd allows you to reset the game and try again
 extends Button
 
 

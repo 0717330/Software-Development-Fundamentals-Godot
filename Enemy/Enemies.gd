@@ -1,3 +1,4 @@
+#the enemies.gd is the movement of all the enemies together and speed
 extends Node2D
 
 var speed = -200
